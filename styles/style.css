@@ -18,7 +18,7 @@
     /* выше установили ограничения для секции */
 }
 
-div,img,h1,p {
+div,img,h1,p,a {
     border: 1px solid red;
   }
 
@@ -40,8 +40,9 @@ div,img,h1,p {
       line-height: 96px;
   }
 
-  .link_color {
+  .page__link {
       color: #2F80ED;
+      text-decoration: none;
   }
 
   .header__subtitle {
@@ -71,6 +72,53 @@ div,img,h1,p {
     position: absolute;
     top: 64px;
     right: 0;
+    
+}
+
+.content {
+
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.two-columns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns_brief {
+    width: 175px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.two-columns_main-text {
+    width: 80%;
+    min-width: 784px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.two-columns_paragraph {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+
+}
+
+.two-columns_span-accent {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
     
 }
 
