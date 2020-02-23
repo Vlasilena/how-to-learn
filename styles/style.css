@@ -14,16 +14,12 @@
     display: flex;
     min-height: 600px;
     max-height: 756px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     position: relative;
     /* выше установили ограничения для секции */
 }
 
-div,img,h1,p,a,h3,h5,section {
-    border: 1px solid red;
-  }
-
-  .header__logo {
+.header__logo {
       width: 183px;
       height: 32px;
       position: absolute;
@@ -38,15 +34,10 @@ div,img,h1,p,a,h3,h5,section {
       font-size: 102px;
       font-weight: bold;
       line-height: 96px;
-      
+
   }
 
-  .page__link {
-      color: #2F80ED;
-      text-decoration: none;
-  }
-
-  .header__subtitle {
+    .header__subtitle {
       width: 388px;
       position: absolute;
       bottom: 30px;
@@ -69,10 +60,10 @@ div,img,h1,p,a,h3,h5,section {
 .header__square-pic {
     height: 568px;
     width: 568px;
-    background-color: #2F80ED;
+    background-color: #2f80ed;
     position: absolute;
     top: 64px;
-    right: 0;    
+    right: 0;
 }
 
 .content {
@@ -92,7 +83,7 @@ div,img,h1,p,a,h3,h5,section {
 .two-columns {
     width: 80%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -102,12 +93,17 @@ div,img,h1,p,a,h3,h5,section {
     line-height: 1.2;
 }
 
+.two-columns__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
 .two-columns__main-text {
     width: 80%;
     min-width: 784px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .two-columns__paragraph {
@@ -125,7 +121,7 @@ div,img,h1,p,a,h3,h5,section {
 .two-columns__span-accent {
     font-size: 24px;
     font-weight: bold;
-    line-height: 34px;    
+    line-height: 34px;
 }
 
 .digits {
@@ -136,7 +132,7 @@ div,img,h1,p,a,h3,h5,section {
     margin-bottom: 100px;
 }
 
-.section__title {    
+.section__title {
     width: 60%;
     margin-top: 0;
     margin-bottom: 0;
@@ -144,7 +140,7 @@ div,img,h1,p,a,h3,h5,section {
     line-height: 69px;
     font-size: 60px;
     font-weight: bold;
-    
+
 }
 
 .section__subtitle {
@@ -158,7 +154,7 @@ div,img,h1,p,a,h3,h5,section {
 }
 
 .table {
-    width: 1100px;       
+    width: 1100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,7 +168,7 @@ div,img,h1,p,a,h3,h5,section {
 }
 
 .table__heading {
-    align-self: flex-start;    
+    align-self: flex-start;
     margin-top: 0;
     line-height: 1.15;
     font-size: 24px;
@@ -197,7 +193,7 @@ div,img,h1,p,a,h3,h5,section {
     position: relative;
     background-color: #f2f2f2;
     z-index: -3;
-    
+
 }
 
 .feinman__title {
@@ -249,28 +245,28 @@ div,img,h1,p,a,h3,h5,section {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     background-color: #1f1f1f;
     overflow: hidden;
     z-index: -3;
-    
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
-    color: white;
+    color: #fff;
     margin-right: 0;
     margin-top: 80px;
-    
+
 }
 
 .section__title_theme_dark {
-    color: white;
+    color: #fff;
 }
 
 .section__subtitle_theme_dark {
-    color: white;
+    color: #fff;
 }
 
 .kaufman__triangle {
@@ -290,6 +286,7 @@ div,img,h1,p,a,h3,h5,section {
     min-height: 350px;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .footer__columns {
@@ -298,13 +295,10 @@ div,img,h1,p,a,h3,h5,section {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    flex-basis: 711px;
 }
 
 .footer__columns_copyright {
-    justify-content: flex-end;
-    
-    
+    flex-basis: 711px;
 }
 
 .logo__place_footer {
@@ -314,15 +308,14 @@ div,img,h1,p,a,h3,h5,section {
 }
 
 .footer__author {
-    flex-direction: row;
-    align-self: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 18px;
     margin-top: 18px;
-    margin-bottom: 18px;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
     color: #fff;
-    
 }
 
 .footer__column_info {
@@ -339,7 +332,7 @@ div,img,h1,p,a,h3,h5,section {
     margin-bottom: 20px;
 }
 
-.footer__column-links {    
+.footer__column-links {
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
@@ -350,7 +343,7 @@ div,img,h1,p,a,h3,h5,section {
     margin-bottom: 16px;
 }
 
-.footer__column_social {    
+.footer__column_social {
     display: flex;
     flex-direction: column;
 
